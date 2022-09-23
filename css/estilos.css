@@ -1,109 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 *{
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Antonio', sans-serif; }
+    font-family: 'Staatliches';
+     }
 
     .pagina{
-            height: 100%;}
+         ;
+        
+            }
 
         .pagina__inicio{
-                        height: 30vh;
                         position: sticky;
                         top:0px;
                         z-index: 10;
-                        background-color: white;}
+                        
+                       
+                      
+                        
+
+        }
+                       
 
             .pagina__inicio__primera{
-                                     height: 20vh;}
-
-                .inicio__primera__logo{
-                                       height: 5vh;
-                                       padding-left: 45%;
-                                       padding-right: 50%;}
+                                  
+                                    height: 8rem;
+                                    position: relative;
+                                     display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                    
+                                    
+                                }
 
                 .inicio__primera__logo img {
-                                             height: 20vh;
-                                             margin-bottom: 5vh;
-                                             margin-top: 3vh;
-                                             border-radius: 2vh;}
-
-                .inicio__primera__buscador{
-                                           position: absolute;
-                                           top: 15vh;
-                                           left: 15vh;
-                                           margin-left: 10vh;
-                                           margin-right: 10vh;}
+                                             height: 18vh;
+                                             border-radius: 5vh;}
 
                 .inicio__primera__buscador form input {
-                                                       width: 20vh;
+                                                       width: 30vh;
                                                        height: 5vh;
-                                                       border-top:0px ;
-                                                       border-bottom:solid 2px #70caee ;
-                                                       border-left:0px;
-                                                       border-right:0px;}
+                                                       }
 
 
-                .inicio__primera__cuenta{
-                                         position: absolute;
-                                         top: 15vh;
-                                         right: 5vh;
-                                         margin-left: 10vh;
-                                        margin-right: 10vh;}
-
-                .inicio__primera__cuenta a {
+                .inicio__primera__cuenta a {                                        
                                             text-decoration: none;
-                                            font-size: 12px;
-                                            margin-right: 2vh;
-                                            color:#70caee;}
+                                            font-size: 2,5vh;
+                                            color:#000000;
+                                            margin-right: 2vh;}
 
 
                 .inicio__primera__cuenta img{
-                                            height: 3vh;
-                                            margin-right: 2vh;
-                                            color:#70caee;}
+                                            height: 4vh;
+                                            }
+                         
+  .pagina__inicio__segunda{
+    display: flex;
+    justify-content: center;
+  }
+.pagina__inicio__segunda__navegacion{
+    height: 8vh;
+    width: 90%; 
+    border-bottom:solid 1px #000000;
+    border-top: solid 1px #000000 ;
+  background-color: skyblue;
+    
+   
+    
+}
 
-            .pagina__inicio__segunda{
-                                      height: 8vh;}
-
-                .pagina__inicio__segunda__navegacion{
-                                                     background-color: #70caee;
-                                                     position: relative;  
-                                                     height: 8vh;
-                                                     margin-top: 5vh;
-                                                     margin-left: 10vh;
-                                                     margin-right: 10vh;
-                                                     border-top: solid 1px black;
-                                                     border-bottom: solid 1px black; }
+          
 
                 .pagina__inicio__segunda__navegacion ul{
-                                                        text-align: center;
-                                                        padding-top: 2vh;}
+                    list-style: none;
+                    font-size: 3vh;
+                    display: flex;
+                    justify-content: space-around;
 
-                .pagina__inicio__segunda__navegacion ul li{
-                                                           display: inline;
-                                                           font-size: 3vh;}
+            }
+            .pagina__inicio__segunda__navegacion a{
+                height: 8vh;
+               color: #000000;             
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+            }
+                    
 
+                    
+                                            
 
-                .pagina__inicio__segunda__navegacion ul li a{
-                                                          margin-right: 6vh;
-                                                          text-decoration: none;
-                                                          color: #111E1E}
+.main{
+    
+}
 
 
         .main__elemento__primero{
+             height: 65vh;
+             width: 100%;
+            margin-top: 5vh;
+            display: flex;
+            justify-content: center;
+            
+    
             
         }
 
             .main__elemento__primero__slider {
-                                            width: 90%;
-                                            height: 50vh;
-                                            margin: 30px auto 0;
+                                            width: 80%;
+                                            height: 80vh;
                                             overflow: hidden;
-                                            border: solid;} 
+                                            } 
 
             .main__elemento__primero__slider  ul {
                                             display: flex;
@@ -117,7 +127,7 @@
     
             .main__elemento__primero__slider  img {
                                                 width: 100%;
-                                                height: 60%; }
+                                                height: 80%; }
     
                                @keyframes slide {
                                                  0% {margin-left: 0;}
@@ -133,254 +143,107 @@
                                                  100% {margin-left: -300%;}}
 
            .main__link__imagenes{
-                                 height: 100vh;
-                                 margin-top: 10vh;}
+                               
+                                height: 100%;
+                                overflow: hidden;
+                                position: relative;
+                                margin: 10vh;
+                                display: flex;
+                                justify-content: space-around;
 
-                .main__link__imagenes__primera{
-                                              position: absolute;
-                                              left: 30px; }
+                                
+                            }
+                                              
 
-                .main__link__imagenes__primera img{
-                                                  height: 600px;
-                                                  width: 300px;
-                                                  border: solid}
-                .main__link__imagenes__primera a{
-                                                position: absolute;
-                                                top: 50vh;
-                                                left:80px ;
+                .main__link__imagenes img{
+                                               height: 300px;
+                                                width: 200px;
+                                                border-radius: 20px;
+                                                box-shadow: 5px 8px 12px black;
+                                                 
+                                                 
+                                                 
+                                                  }
+                .main__link__imagenes p{
                                                 color:  #111E1E;
                                                 text-decoration: none;
                                                 font-size: 6vh;
-                                                color:  #70caee;
-                                               font-family: 'Anton', sans-serif; }
-
-                .main__link__imagenes__segunda{
-                                           position: absolute;
-                                           left: 360px }
-
-               .main__link__imagenes__segunda img{
-                                                  height: 600px;
-                                                  width: 300px;
-                                                  border: solid;}
-
-               .main__link__imagenes__segunda a{
+                                                font-family: 'Staatliches';
                                                 position: absolute;
-                                                top: 50vh;
-                                                left: 100px ;
-                                                color:  #111E1E;
-                                               text-decoration: none;
-                                               font-size: 6vh ;
-                                                color: #70caee;
-                                               font-family: 'Anton', sans-serif }
+                                                top: 50%;
+                                                margin-left: 15vh;
+                                                transform: translate(-50%,-50%); }
+.main__titulo{
+    text-align: center;
+    font-family: 'Staatliches';
+    font-size: 8vh;
+    background-color: skyblue;
 
-                .main__link__imagenes__tercera{
-                                               position:absolute;
-                                               right: 30px ;}
-
-                .main__link__imagenes__tercera img{
-                                                 height: 600px;
-                                                 width: 300px;
-                                                 border: solid;}
-
-                .main__link__imagenes__tercera a{
-                                                  position: absolute;
-                                                  top: 50vh;
-                                                  right: 90px ;
-                                                  color:  #111E1E;
-                                                  text-decoration: none;
-                                                  font-size: 6vh;
-                                                  color:  #70caee;
-                                                  font-family: 'Anton', sans-serif;}
-
-                .main__link__imagenes__cuarta {
-                                               position:absolute;
-                                               right:360px ; }
-
-                .main__link__imagenes__cuarta img{
-                                                 height: 600px;
-                                                 width: 300px;
-                                                 border: solid;}
+}
+.main__videos{
+    height: 50vh;
+    margin: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main__videos video{
+    height: 300px;
+    width: 200px;
+}
+                
     
-                .main__link__imagenes__cuarta a{
-                                                 position: absolute;
-                                                 top: 50vh;
-                                                 right: 100px ;
-                                                 color:  #111E1E;
-                                                 text-decoration: none;
-                                                 font-size: 6vh;
-                                                 color: #70caee;
-                                                 font-family: 'Anton', sans-serif; }
-    .pieDePagina{
-                 margin-top: 5vh;}
-
-                .pieDePagina__redesSociales{
-                                           text-align: center; }
-
-                .pieDePagina__redesSociales h3{
-                                               position: absolute;
-                                               left: 40%;
-                                               right: 50%;
-                                               top: 205%;
-                                               background-color: white;
-                                               font-size: 20px;
-                                               color: #000000;
-                                               width: 30vh;
-                                               padding-bottom: 2vh;
-                                               text-align: center;
-                                               border: 2px }
-    
-                .pieDePagina__redesSociales__iconos{
-                                               border-top:solid 1px #111E1E;
-                                               border-bottom: solid 1px #111E1E ;
-                                               padding-top: 5vh;
-                                               padding-bottom: 5vh; }
-
-                .pieDePagina__redesSociales__iconos img{
-                                                       height: 12vh;
-                                                       border-radius: solid;
-                                                       margin-right: 6vh; }
-
-                .pieDePagina__informacion{
-                                           height: 20vh;
-                                           border-bottom: solid 1px #111E1E ;
-                                           padding-top: 2vh;
-                                           color: #000000; }
-   
-                .pieDePagina__informacion__entrega{
-                                            position: absolute;
-                                             text-align: center;
-                                             left: 35vh;
-                                             font-size: 3vh;}
-   
-                .pieDePagina__informacion__entrega img {
-                                                       height: 6vh;
-                                                       margin-right: 5vh;
-                                                       text-align: center; }
-
-                .pieDePagina__informacion__pagos{
-                                                position: absolute;
-                                                text-align: center;
-                                                left: 95vh;
-                                                font-size: 3vh; }
-
-                .pieDePagina__informacion__pagos img{
-                                                height: 6vh;
-                                                margin-right: 5vh;
-                                                text-align: center; }
-
-                .pieDePagina__informacion__seguridad{
-                                                     position: absolute;
-                                                     text-align: center;
-                                                     right: 25vh;
-                                                     font-size: 3vh; }
-
-                .pieDePagina__informacion__seguridad img {
-                                                     height: 6vh;
-                                                     margin-right: 5vh;
-                                                     text-align: center; }
-
-                .pieDePagina__navegacion{
+ .pieDePagina__navegacion{
                                         width: 100%;
-                                        height: 50%;
-                                        color: #000000; }
+                                        height: 40vh;
+                                        color: #000000;
+                                        background-color: skyblue;
+                                        border-top: solid 1px black;
+                                         display: flex;
+                                        flex-direction: row;
+                                        justify-content: space-around;
+                                    align-items: center; }
 
-                .pieDePagina__navegacion__links {
-                                                position: absolute;
-                                                padding-top: 2vh;
-                                                padding-left: 10vh;
-                                                height: 40%;
-                                                width: 20%;}
+                
 
-                .pieDePagina__navegacion__links h4 {
-                                                   font-size: 20px;
-                                                   margin-top: 1vh;
-                                                   margin-bottom: 2vh;}
-
+                .pieDePagina__navegacion  h4 {
+                    font-size: 4vh;
+                    text-align: center;
+                    font-family: 'Staatliches';
+                }
+                                                  
                 .pieDePagina__navegacion__links__anclas ul{
-                                                        margin: top 2vh; ; }
-
-                .pieDePagina__navegacion__links__anclas ul li{
-                                                             font-size: 15px;
-                                                             list-style-type: none; }
+                    list-style: none;
+                    font-size: 3vh;
+                }
 
                 .pieDePagina__navegacion__links__anclas ul li a {
-                                                                  text-decoration: none;
-                                                                  font-family: 'Antonio', sans-serif;
-                                                                  line-height: 1.7;
-                                                                  color: #000000;}
+                    height: 8vh;
+                    color: #000000;             
+                     text-decoration: none;
+                                                                  }
 
-                .pieDePagina__navegacion__medios{
-                                                  height: 40%;
-                                                  width: 30%;
-                                                  position: absolute;
-                                                  text-align: center;
-                                                  margin-left: 30%; }
-
-                .pieDePagina__navegacion__medios h4 {
-                                                 font-size: 20px ;
-                                                 margin-top: 3vh; }
+               
 
                 .pieDePagina__navegacion__medios img {
-                                                 height: 30vh;
-                                                 width: 50vh; }
-
-                .pieDePagina__navegacion__contactanos{
-                                                 height: 40%;
-                                                 width: 30%;
-                                                 position: absolute;
-                                                 margin-left: 70%;}
-
-                .pieDePagina__navegacion__contactanos h4{
-                                                        font-size: 20px;
-                                                        margin-top: 3vh;
-                                                        margin-bottom: 2vh;
-                                                        width: 100%;
-                                                        margin-left: 40%;}
-
-                .pieDePagina__navegacion__contactanos__telefono {
-                                                                 height: 6vh;
-                                                                 width:100% ;
-                                                                 margin-top: 1vh;}
-
-                .pieDePagina__navegacion__contactanos__telefono img{
-                                                                  position: absolute;
-                                                                  margin-top: 1vh;
-                                                                  height: 5vh;
-                                                                  margin-left: 20%;}
-
-                .pieDePagina__navegacion__contactanos__telefono p{
-                                                                margin-left: 30%;
-                                                                font-size: 15px;
-                                                                padding-top: 2vh;}
-
-                .pieDePagina__navegacion__contactanos__mail{
-                                                             height: 6vh;
-                                                             width: 100%;
-                                                             margin-top: 1vh;}
-
-                .pieDePagina__navegacion__contactanos__mail img{
-                                                             position: absolute;
-                                                             margin-top: 1vh;
-                                                             height: 4vh;
-                                                             margin-left: 20%;}
-
-                .pieDePagina__navegacion__contactanos__mail p{
-                                                             font-size: 15px;
-                                                             margin-left: 30%;
-                                                             padding-top: 2vh;}
-
-                .pieDePagina__navegacion__contactanos__mapa{
-                                                              height: 6vh;
-                                                              width: 100%;
-                                                              margin-top: 1vh;}
-
-                .pieDePagina__navegacion__contactanos__mapa img {
-                                                              position: absolute;
-                                                              margin-top: 1vh;
-                                                              height: 5vh;
-                                                              margin-left: 20%;}
-
-                .pieDePagina__navegacion__contactanos__mapa p{
-                                                              font-size: 15px;
-                                                              margin-left: 30%;
-                                                              padding-top: 2vh;}
+                    height: 5vh;
+                    margin-top: 4vh;
+                    
+                                                  }
+                                                  .pieDePagina__navegacion__contactanos{
+                                                    text-align: center;
+                                                    font-family: 'Staatliches';
+                                                  }
+                                                  .pieDePagina__redesSociales{
+                                                    position: fixed;
+                                                    bottom: 10px;
+                                                    right: 20px;
+                                                  }
+                                                  .pieDePagina__redesSociales img{
+                                                    height: 10vh;
+                                                    border-radius: 20px;
+                                                box-shadow: 5px 8px 12px black;
+                                                  }
+                                                  .derechos{
+                                                    text-align: center;
+                                                  }
