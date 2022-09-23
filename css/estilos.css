@@ -8,19 +8,22 @@
      }
 
     .pagina{
-         ;
-        
-            }
-
-        .pagina__inicio{
+      display: grid;
+      grid-template-areas: "header"
+                           "main"
+                           "footer"
+                           "derechos";
+                           
+                           
+      }
+    
+      
+         .pagina__inicio{
+          grid-area: header;
                         position: sticky;
                         top:0px;
                         z-index: 10;
                         
-                       
-                      
-                        
-
         }
                        
 
@@ -94,6 +97,7 @@
                                             
 
 .main{
+  grid-area: main;
     
 }
 
@@ -120,7 +124,8 @@
                                             padding: 0;
                                             width: 400%;
                                             animation: slide 10s infinite alternate ease-in-out; }
-    
+
+
             .main__elemento__primero__slider  li {
                                               width: 100%;
                                               list-style: none; }
@@ -144,7 +149,6 @@
 
            .main__link__imagenes{
                                
-                                height: 100%;
                                 overflow: hidden;
                                 position: relative;
                                 margin: 10vh;
@@ -191,8 +195,10 @@
     height: 300px;
     width: 200px;
 }
-                
-    
+     .pieDePagina{
+      grid-area: footer;
+      
+     }           
  .pieDePagina__navegacion{
                                         width: 100%;
                                         height: 40vh;
@@ -245,5 +251,7 @@
                                                 box-shadow: 5px 8px 12px black;
                                                   }
                                                   .derechos{
+                                                    grid-area: derechos;
                                                     text-align: center;
                                                   }
+                                                  
