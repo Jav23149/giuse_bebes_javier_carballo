@@ -6,56 +6,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Productos</title>
         <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 
     </head>
 
     <body class="pagina__productos">
         
-        <header class="pagina__inicio" > 
+        <header class="pagina__inicio  row  position-sticky top-0   " > 
             <!--Primera seccion del header -->
-         <section class="pagina__inicio__primera">
-              
+           
+         
+         <section class="pagina__inicio__primera row d-flex justify-content-around align-items-center ">
+             
 
-              <div class="inicio__primera__buscador" >
+              <div class="inicio__primera__buscador col   ;" >
                 <!--Buscador rapido-->
-                 <form>
-                     <input  type="text"  placeholder="Buscar">
-                 </form>
+                <form>
+                 <input type="text"  placeholder="Buscar">
+             </form>
              </div>
-             <div class="inicio__primera__logo" >
-                <!--Imagen que es el logo de la empresa-->
-                  <img src="../src/Logo de Giuse.jpeg" alt=" logo de giuse bebes">
-              </div>
+             <div class="inicio__primera__logo col   "> 
+                 <!--Imagen que es el logo de la empresa-->
+                   <img src="../src/logo.jpeg" ; alt=" logo de giuse bebes">
+               </div>
 
-             <div class="inicio__primera__cuenta" >
+             <div class="inicio__primera__cuenta col " >
 
                  <!-- link de ingreso para crear una cuenta o iniciar secion-->
-                 <a href="">CREAR CUENTA</a>
-                 <a href=""> INICIAR SESIÓN</a>
-                 <img src="../src/icono de carrito.png" alt="Icono de un carrito de compras">
+                 <a class="text-decoration-none " href="">CREAR CUENTA -</a>
+                 <a class="text-decoration-none " href=""> INICIAR SESIÓN</a>
+                 <img src="../src/carrito de compra.png"  alt="Icono de un carrito de compras">
              </div>
+             
+             
          </section>
-
+        
              <!--Segunda sesion del header-->
-         <section class="pagina__inicio__segunda" >
+         <section class="pagina__inicio__segunda row-fluid mx-auto" >
 
-             <nav class="pagina__inicio__segunda__navegacion">
-                 <ul>
-                 <!--Hipervinculos que nos premiten navegar entre las paginas-->
-                     <li>  <a  href="../index.html">Inicio</a> </li>
-                     <li>  <a  href="#">Productos</a> </li>
-                     <li>  <a  href="./contactos.html">Contactos</a> </li>
-                     <li>  <a  href="./como_comprar.html"> Como Comprar</a> </li>
-                     <li>  <a  href="./preguntas_frecuentes.html"> Preguntas Frecuentes</a> </li>
-                 </ul>
+             <nav class="pagina__inicio__segunda__navegacion col mb-4">
+                 <ul class="nav justify-content-center">
+                     <li class="nav-item">
+                       <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="./paginas/productos.html">Productos</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="./paginas/contactos.html">Contacto</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="./paginas/como_comprar.html">Como Comprar</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="./paginas/preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                       </li>
+                   </ul>
              </nav>
          </section>
      </header>
 
-        <main class="main__productos">
+        <main class="main__productos ">
             <!--Primera sesion del main-->
             <section class="categorias">
             <!--Incluye las categorias disponibles en la tienda-->
@@ -220,6 +233,6 @@
         <p>Derechos reservados</p>
     </div>
         
-
+    <script  src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

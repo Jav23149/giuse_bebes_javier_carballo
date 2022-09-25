@@ -7,229 +7,103 @@
     font-family: 'Staatliches';
      }
 
-    .pagina{
-      display: grid;
-      grid-template-areas: "header"
-                           "main"
-                           "footer"
-                           "derechos";
-                           
-                           
-      }
+   
     
       
+      
          .pagina__inicio{
-          grid-area: header;
-                        position: sticky;
-                        top:0px;
+       
                         z-index: 10;
                         
-        }
+        } 
                        
 
             .pagina__inicio__primera{
                                   
-                                    height: 8rem;
-                                    position: relative;
-                                     display: flex;
-                                    flex-direction: row;
-                                    justify-content: space-around;
-                                    align-items: center;
-                                    
-                                    
-                                }
+                                    height: 8rem;}
+                                  
+                               
 
-                .inicio__primera__logo img {
+  
+               .inicio__primera__logo img {
                                              height: 18vh;
-                                             border-radius: 5vh;}
+                                            }
 
-                .inicio__primera__buscador form input {
-                                                       width: 30vh;
-                                                       height: 5vh;
-                                                       }
-
+               
 
                 .inicio__primera__cuenta a {                                        
-                                            text-decoration: none;
-                                            font-size: 2,5vh;
+                                          
+                                            font-size: 2vh;
                                             color:#000000;
-                                            margin-right: 2vh;}
+                                           }
 
 
-                .inicio__primera__cuenta img{
-                                            height: 4vh;
-                                            }
+              
                          
-  .pagina__inicio__segunda{
-    display: flex;
-    justify-content: center;
-  }
+ 
 .pagina__inicio__segunda__navegacion{
-    height: 8vh;
-    width: 90%; 
-    border-bottom:solid 1px #000000;
-    border-top: solid 1px #000000 ;
+   
   background-color: skyblue;
     
    
     
 }
-
-          
-
-                .pagina__inicio__segunda__navegacion ul{
-                    list-style: none;
-                    font-size: 3vh;
-                    display: flex;
-                    justify-content: space-around;
-
-            }
-            .pagina__inicio__segunda__navegacion a{
-                height: 8vh;
-               color: #000000;             
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-            }
-                    
-
-                    
-                                            
-
-.main{
-  grid-area: main;
-    
-}
-
-
-        .main__elemento__primero{
-             height: 65vh;
-             width: 100%;
-            margin-top: 5vh;
-            display: flex;
-            justify-content: center;
-            
-    
-            
-        }
-
-            .main__elemento__primero__slider {
-                                            width: 80%;
-                                            height: 80vh;
-                                            overflow: hidden;
-                                            } 
-
-            .main__elemento__primero__slider  ul {
-                                            display: flex;
-                                            padding: 0;
-                                            width: 400%;
-                                            animation: slide 10s infinite alternate ease-in-out; }
-
-
-            .main__elemento__primero__slider  li {
-                                              width: 100%;
-                                              list-style: none; }
-    
-            .main__elemento__primero__slider  img {
-                                                width: 100%;
-                                                height: 80%; }
-    
-                               @keyframes slide {
-                                                 0% {margin-left: 0;}
-                                                 20% {margin-left: 0;}
-        
-                                                 25% {margin-left: -100%;}
-                                                 45% {margin-left: -100%;}
-        
-                                                 50% {margin-left: -200%;}
-                                                 70% {margin-left: -200%;}
-        
-                                                 75% {margin-left: -300%;}
-                                                 100% {margin-left: -300%;}}
-
-           .main__link__imagenes{
-                               
-                                overflow: hidden;
-                                position: relative;
-                                margin: 10vh;
-                                display: flex;
-                                justify-content: space-around;
-
-                                
-                            }
-                                              
-
-                .main__link__imagenes img{
-                                               height: 300px;
-                                                width: 200px;
-                                                border-radius: 20px;
-                                                box-shadow: 5px 8px 12px black;
-                                                 
-                                                 
-                                                 
-                                                  }
-                .main__link__imagenes p{
-                                                color:  #111E1E;
+.thumbnail { 
+  position: relative; 
+ } 
+ .caption { 
+  position: absolute; 
+  top: 45%; 
+  left: 0; 
+  width: 100%; 
+ } 
+ .caption p {
+               color:  #111E1E;
                                                 text-decoration: none;
                                                 font-size: 6vh;
                                                 font-family: 'Staatliches';
-                                                position: absolute;
-                                                top: 50%;
-                                                margin-left: 15vh;
-                                                transform: translate(-50%,-50%); }
-.main__titulo{
+
+ }
+
+          
+
+              
+            .pagina__inicio__segunda__navegacion a{
+                height: 8vh;
+               color: #000000;  }           
+               
+                                            
+
+
+
+          
+                                              
+
+                .main__link__imagenes img {
+                                                height: 300px;
+                                                width: 200px;
+                                                border-radius: 20px;
+                                                box-shadow: 5px 8px 12px black;}
+                                                
+                  
+.main__titulo {
     text-align: center;
     font-family: 'Staatliches';
     font-size: 8vh;
     background-color: skyblue;
 
 }
-.main__videos{
-    height: 50vh;
-    margin: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 .main__videos video{
     height: 300px;
     width: 200px;
 }
-     .pieDePagina{
-      grid-area: footer;
-      
-     }           
- .pieDePagina__navegacion{
-                                        width: 100%;
-                                        height: 40vh;
-                                        color: #000000;
+     
+.pieDePagina__navegacion{
+                                        
                                         background-color: skyblue;
-                                        border-top: solid 1px black;
-                                         display: flex;
-                                        flex-direction: row;
-                                        justify-content: space-around;
-                                    align-items: center; }
+                                         }
 
-                
-
-                .pieDePagina__navegacion  h4 {
-                    font-size: 4vh;
-                    text-align: center;
-                    font-family: 'Staatliches';
-                }
-                                                  
-                .pieDePagina__navegacion__links__anclas ul{
-                    list-style: none;
-                    font-size: 3vh;
-                }
-
-                .pieDePagina__navegacion__links__anclas ul li a {
-                    height: 8vh;
-                    color: #000000;             
-                     text-decoration: none;
-                                                                  }
-
-               
 
                 .pieDePagina__navegacion__medios img {
                     height: 5vh;
@@ -240,18 +114,15 @@
                                                     text-align: center;
                                                     font-family: 'Staatliches';
                                                   }
-                                                  .pieDePagina__redesSociales{
-                                                    position: fixed;
-                                                    bottom: 10px;
-                                                    right: 20px;
+                                                  .pieDePagina__redesSociales {
+                                                    
+                                            position: fixed;
+                                             bottom: 0%;
+                                            right: 0%;
                                                   }
                                                   .pieDePagina__redesSociales img{
                                                     height: 10vh;
                                                     border-radius: 20px;
-                                                box-shadow: 5px 8px 12px black;
-                                                  }
-                                                  .derechos{
-                                                    grid-area: derechos;
-                                                    text-align: center;
+                                                    box-shadow: 5px 8px 12px black;
                                                   }
                                                   
