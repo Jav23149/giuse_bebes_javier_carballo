@@ -7,192 +7,216 @@
         <title>Inicio</title>
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/estilos.css">
 
     </head>
 
-    <body class="pagina container ">
+    <body class="conteiner-fluid">
+ 
+        <header class=" header container-fluid sticky-top  " > 
+              <!--Primera seccion de Header-->
+            <section class=" first__seccion container text-center  ">
+               
+                <div class="row  justify-content-center align-items-center  ">
 
-        <header class="pagina__inicio  row  position-sticky top-0   " > 
-               <!--Primera seccion del header -->
-              
-            
-            <section class="pagina__inicio__primera row d-flex justify-content-around align-items-center ">
-                
-
-                 <div class="inicio__primera__buscador col   ;" >
+                  
+                 <div class=" col-4 opacity-75 mt-4 " >
                    <!--Buscador rapido-->
                    <form>
-                    <input type="text"  placeholder="Buscar">
+                    <input type="text"  placeholder="Buscar" class="w-100">
                 </form>
                 </div>
-                <div class="inicio__primera__logo col   "> 
-                    <!--Imagen que es el logo de la empresa-->
-                      <img src="./src/logo.jpeg" ; alt=" logo de giuse bebes">
+                 <!--Logo de la pagina web-->
+                <div class=" logo_img  col-4 "> 
+                    <a class="navbar-brand" href="./index.html">
+                        <div class="imagen_logo mt-4   ">
+                          <img src="./src/logo.jpeg"  alt="logo-giuse-bebes " width="90" height="90"> 
+                          
+                        </div>
+                    </a>
                   </div>
 
-                <div class="inicio__primera__cuenta col " >
+                <div class= " crear__cuenta col-4 mt-4 " >
 
-                    <!-- link de ingreso para crear una cuenta o iniciar secion-->
-                    <a class="text-decoration-none " href="">CREAR CUENTA -</a>
-                    <a class="text-decoration-none " href=""> INICIAR SESIÓN</a>
-                    <img src="./src/carrito de compra.png"  alt="Icono de un carrito de compras">
+                    <!-- link de ingreso para crear una cuenta o iniciar seción-->
+                    <a class="text-decoration-none  hvr-float" href="">CREAR CUENTA -</a>
+                    <a class="text-decoration-none   hvr-float" href=""> INICIAR SESIÓN</a>
+                    <img src="./src/carrito de compra.png"  alt="Icono de un carrito de compras" height="30">
                 </div>
-                
-                
-            </section>
-           
-                <!--Segunda sesion del header-->
-            <section class="pagina__inicio__segunda row-fluid mx-auto" >
-
-                <nav class="pagina__inicio__segunda__navegacion col mb-4">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./paginas/productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./paginas/contactos.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./paginas/como_comprar.html">Como Comprar</a>
+            <!--segunda seccion del Header-->
+              </section>
+            
+              <!--Navegador que se transforma a vista mobile-->
+                <nav class="navbar navbar-expand-md mt-4 ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav w-100 d-flex justify-content-center  ">
+                          <li class="nav-item me-4">
+                            <a class="nav-link hvr-float  " aria-current="page" href="#">Inicio</a>
+                          </li>
+                          <li class="nav-item me-4">
+                            <a class="nav-link hvr-float " href="./paginas/productos.html">Productos</a>
+                          </li>
+                          <li class="nav-item me-4">
+                            <a class="nav-link hvr-float " aria-current="page" href="./paginas/contactos.html">Contactos</a>
+                          </li>
+                          <li class="nav-item me-4">
+                            <a class="nav-link hvr-float  " aria-current="page" href="./paginas/como_comprar.html">Como comprar</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="./paginas/preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                            <a class="nav-link hvr-float  " aria-current="page" href="./paginas/preguntas_frecuentes.html">Preguntas frecuentes</a>
                           </li>
-                      </ul>
+                         
+                        </ul>
+                      
+                      </div>
                 </nav>
-            </section>
-        </header>
+                </div>
+            </header>
+         <!--Video que esta puesto en todo el Body-->
+            <div class="divVideo">
+              <video autoplay muted loop class="video">
+                <source src="./src/BebÃ© - 115458.mp4" type="video/mp4">
+               
+              </video>
+            </div>
 
-
-        <main class="main row container">
-                 <!--Primera sesion del main-->
-                 <section class="carousel slide row" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./src/imagen1.jfif" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./src/imagen2.jfif" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./src/imagen3.jfif" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./src/imagen4.jfif" class="d-block w-100" alt="...">
-                      </div>
+        <main class=" container-fluid main">
+          
+           
+                 <!--Primera seccion del main que incluye un carusel de imagenes-->
+                 <div id="myCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                 </section>
-
-            <section class="main__link__imagenes row mt-4">
-              
-                <div class="thumbnail text-center col"> 
-                    <img src="./src/bebas.jpeg" alt="" class="img-responsive"> 
-                    <div class="caption"> 
+                    <div class="carousel-inner">
+                      <div class="carousel-item active"> 
+                        <img src="./src/imagen1.jfif" class="d-block w-100 cover filtro" alt="bebes_1">
+                
+                       
+                      </div>
+                      <div class="carousel-item">
+                      
+                        <img src="./src/imagen2.jfif" class="d-block w-100 cover filtro" alt="bebes_2">
+                
+                        
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./src/imagen4.jfif" class="d-block w-100 cover filtro" alt="bebes_3">
+                
+                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              <!--Segunda seccion del Main imagenes con link que nos lleva a productos.-->
+            <section class="main__link__imagenes container-fluid mt-4">
+              <div class="row">
+                <div class="thumbnail  text-center col-12 col-md-6 col-lg-3 "> 
+                    <img src="./src/bebas.jpeg" alt=" imagen de una bebita" class=" img-responsive"> 
+                    <div class="caption hvr-float"> 
                     <p>BEBAS</p> 
                     </div> 
                     </div>
-                    <div class="thumbnail text-center col mb-4"> 
-                        <img src="./src/bebes.jpeg" alt="" class="img-responsive"> 
-                        <div class="caption"> 
+                    <div class="thumbnail  text-center col-12  col-md-6 mb-4 col-lg-3"> 
+                        <img src="./src/bebes.jpeg" alt="imagen de un bebe" class="img-responsive"> 
+                        <div class="caption hvr-float"> 
                         <p>BEBES</p> 
                         </div> 
                         </div>
-                        <div class="thumbnail text-center col"> 
-                            <img src="./src/niñas.jpeg" alt="" class="img-responsive"> 
-                            <div class="caption"> 
+                        <div class="thumbnail  text-center col-12  col-md-6 col-lg-3"> 
+                            <img src="./src/niñas.jpeg" alt="imagen de una niña" class="img-responsive"> 
+                            <div class="caption hvr-float"> 
                             <p>NIÑAS</p> 
                             </div> 
                             </div>
-                            <div class="thumbnail text-center col"> 
-                                <img src="./src/niños.jpeg" alt="" class="img-responsive"> 
-                                <div class="caption"> 
+                            <div class="thumbnail  text-center col-12  col-md-6 col-lg-3"> 
+                                <img src="./src/niños.jpeg" alt="imagen de un niño" class="img-responsive"> 
+                                <div class="caption hvr-float"> 
                                 <p>NIÑOS</p> 
                                 </div> 
                                 </div>
-            </section>
-
-            <div class="main__titulo row mt-4 ">
-                <h3>TU PRENDA ESTA EN GIUSE BEBES</h3>
+                            </div>
             </div>
-             <!--Segunda sesion del main-->
+
+            <div class="main__titulo mt-4 text-center ">
+               <h3>TU PRENDA ESTA EN GIUSE BEBES</h3>
+            </div>
+             <!--Tercera seccion del main, se incluyen video que demuestra alguna prendas-->
             
-            <section class="main__videos row mt-4">
-                <div class="video1 col-2">
+            <div class="main__videos container-fluid mt-4">
+                <div class=" main__videos  row">
+                <div class="video1 col-6 col-md-4 col-lg-2">
                     <video src="./src/video 2.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video2 col-2">
+                <div class="video2  col-6 col-md-4 col-lg-2  ">
                     <video src="./src/video3.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video3 col-2">
+                <div class="video3  col-6 col-md-4 col-lg-2 ">
                     <video src="./src/video 4.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video4 col-2">
+                <div class="video4  col-6 col-md-4 col-lg-2 ">
                     <video src="./src/video5.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video5 col-2">
+                <div class="video5  col-6 col-md-4 col-lg-2 ">
                     <video src="./src/video6.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video6 col-2">
+                <div class="video6  col-6  col-md-4 col-lg-2 ">
                     <video src="./src/video7.mp4" autoplay muted loop></video> 
                 </div>
-            </section>
+            </div>
+        
         </main>
+             <!--Comienza el footeer-->
+        <footer class="container-fluid ">
             
-        <footer class="pieDePagina row container mt-4  border-bottom">
-            
-            <section class="pieDePagina__navegacion row mt-4">
+            <section class=" footer row  mt-4">
             <!-- titulo que nos indica la Navegacion-->
-                <div class="pieDePagina__navegacion__links mt-4 col">
+                <div class="pieDePagina__navegacion__links mt-4 col-12 col-md-4 col-lg-4 text-left">
 
                     <h4>Navegacion</h4>
 
                     <nav class="pieDePagina__navegacion__links__anclas">
                         <nav class="nav flex-column text-dark">
-                            <a class="nav-link active text-dark " aria-current="page" href="#">Inicio</a>
-                            <a class="nav-link active text-dark" aria-current="page" href="./paginas/productos.html">Productos</a>
-                            <a class="nav-link active text-dark" aria-current="page" href="./paginas/contactos.html">Contacto</a>
-                            <a class="nav-link active text-dark" aria-current="page" href="./paginas/como_comprar.html">Como Comprar</a>
-                            <a class="nav-link active text-dark" aria-current="page" href="./paginas/preguntas_frecuentes.html">Preguntas Frecuentes</a>
+                            <a class="nav-link active text-dark  hvr-forward " aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active text-dark  hvr-forward" aria-current="page" href="./paginas/productos.html">Productos</a>
+                            <a class="nav-link active text-dark  hvr-forward" aria-current="page" href="./paginas/contactos.html">Contacto</a>
+                            <a class="nav-link active text-dark  hvr-forward" aria-current="page" href="./paginas/como_comprar.html">Como Comprar</a>
+                            <a class="nav-link active text-dark  hvr-forward" aria-current="page" href="./paginas/preguntas_frecuentes.html">Preguntas Frecuentes</a>
                           </nav>
                 </div>
              
-                <div class="pieDePagina__navegacion__medios mt-4 col ">
+                <div class=" medios__pagos mt-4 col-12 col-md-4 col-lg-4 text-center  ">
               <!-- Titulo e imagen que nos indican cuales son las tarjetas que recibimos-->
                     <h4>Medios de pago</h4>
-                    <img src="./src/visa@2x.png" alt="">
-                    <img src="./src/amex@2x.png" alt="">
-                    <img src="./src/nativa@2x.png" alt="">
-                    <img src="./src/mastercard@2x.png" alt="">
-                    <img src="./src/mercadopago@2x.png" alt="">
-                    <img src="./src/tarjeta-naranja@2x.png" alt="">
-                    <img src="./src/pagofacil@2x.png" alt="">
+                    <img src="./src/visa@2x.png" class="hvr-float" height="50" alt=" imagen de la tarjeta visa">
+                    <img src="./src/nativa@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta nativa">
+                    <img src="./src/mastercard@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta mastercard">
+                    <img src="./src/mercadopago@2x.png" class="hvr-float" height="50" alt="imagen de mercado pago">
+                    <img src="./src/tarjeta-naranja@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta naranja">
+                    <img src="./src/pagofacil@2x.png" class="hvr-float" height="50" alt="imagen de pago facil">
                 </div>
-        
-                <div class="pieDePagina__navegacion__contactanos mt-4 col">
+      
+                <div class="pieDePagina__navegacion__contactanos mt-4 col-12 col-md-4 col-lg-4 text-center">
              <!--titulo de los medios de contacto-->
                     <h4>Contactanos</h4>
-
-                <div class="pieDePagina__navegacion__contactanos__telefono row">
-                    <!--Numero de telefono de contacto-->
                     <p >3525629084</p>
-                </div>
-
-                <div class="pieDePagina__navegacion__contactanos__mail row">
-                    <!--Direccion de mail de contacto-->
                     <p>giusebebes@gmail.com</p>
-                </div>
-
-                <div class="pieDePagina__navegacion__contactanos__mapa row">
-                    <!--Direccion de nuestro local fisico-->
                     <p>Transito caseres de Allende 462</p>
-                </div>
-            
-            </section> 
+                    </div> 
+          </section>
             <section class="pieDePagina__redesSociales ">
                 <!-- div que indica los hipervinculos de las redes sociales-->
                  <div class="pieDePagina__redesSociales__instagram ">
@@ -204,14 +228,13 @@
                         <a href="https://wa.me/qr/424ODNCL2UVXD1"><img class="whatsapp" src="./src/icono de whatsapp.png" alt=""></a>
                  </div>
             </section>
-          
+            <div class=" row derechos  text-center">
+              <p>DERECHOS RESERVADOS </p>
+          </div>
         </footer>
-
-        <div class="derechos row text-center">
-            <p>DERECHOS RESERVADOS</p>
-        </div>
-          
+            
+        
         <script  src="./js/bootstrap.bundle.min.js"></script>
     </body>
-
+    
 </html>

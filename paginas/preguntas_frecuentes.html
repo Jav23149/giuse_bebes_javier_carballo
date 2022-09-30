@@ -6,54 +6,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Preguntas Frecuentes</title>
         <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     </head>
 
     <body class="pagina">
-        <header class="pagina__inicio" > 
-            <!--Primera seccion del header -->
-         <section class="pagina__inicio__primera">
-              
-             <div class="inicio__primera__logo" >
-               <!--Imagen que es el logo de la empresa-->
-                 <img src="../src/Logo de Giuse.jpeg" alt=" logo de giuse bebes">
-             </div>
+        <header class=" header container-fluid sticky-top  " > 
+            <!--Primera seccion de Header-->
+          <section class=" first__seccion container text-center  ">
+             
+              <div class="row  justify-content-center align-items-center  ">
 
-              <div class="inicio__primera__buscador" >
-                <!--Buscador rapido-->
+                
+               <div class=" col-4 opacity-75 mt-4 " >
+                 <!--Buscador rapido-->
                  <form>
-                     <input  type="text"  placeholder="Buscar">
-                 </form>
-             </div>
+                  <input type="text"  placeholder="Buscar" class="w-100">
+              </form>
+              </div>
+               <!--Logo de la pagina web-->
+              <div class=" logo_img  col-4 "> 
+                  <a class="navbar-brand" href="../index.html">
+                      <div class="imagen_logo mt-4   ">
+                        <img src="../src/logo.jpeg"  alt="logo-giuse-bebes " width="90" height="90"> 
+                        
+                      </div>
+                  </a>
+                </div>
 
-             <div class="inicio__primera__cuenta" >
+              <div class= " crear__cuenta col-4 mt-4 " >
 
-                 <!-- link de ingreso para crear una cuenta o iniciar secion-->
-                 <a href="">CREAR CUENTA</a>
-                 <a href=""> INICIAR SESIÓN</a>
-                 <img src="../src/icono de carrito.png" alt="Icono de un carrito de compras">
-             </div>
-         </section>
+                  <!-- link de ingreso para crear una cuenta o iniciar seción-->
+                  <a class="text-decoration-none  hvr-float" href="">CREAR CUENTA -</a>
+                  <a class="text-decoration-none   hvr-float" href=""> INICIAR SESIÓN</a>
+                  <img src="../src/carrito de compra.png"  alt="Icono de un carrito de compras" height="30">
+              </div>
+          <!--segunda seccion del Header-->
+            </section>
+          
+            <!--Navegador que se transforma a vista mobile-->
+              <nav class="navbar navbar-expand-md mt-4 ">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                      <ul class="navbar-nav w-100 d-flex justify-content-center  ">
+                        <li class="nav-item me-4">
+                          <a class="nav-link hvr-float  " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item me-4">
+                          <a class="nav-link hvr-float " href="../paginas/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item me-4">
+                          <a class="nav-link hvr-float " aria-current="page" href="../paginas/contactos.html">Contactos</a>
+                        </li>
+                        <li class="nav-item me-4">
+                          <a class="nav-link hvr-float  " aria-current="page" href="./como_comprar.html">Como comprar</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link hvr-float  " aria-current="page" href="#">Preguntas frecuentes</a>
+                        </li>
+                       
+                      </ul>
+                    
+                    </div>
+              </nav>
+              </div>
+          </header>
 
-             <!--Segunda sesion del header-->
-         <section class="pagina__inicio__segunda" >
-
-             <nav class="pagina__inicio__segunda__navegacion">
-                 <ul>
-                 <!--Hipervinculos que nos premiten navegar entre las paginas-->
-                     <li>  <a  href="../index.html">Inicio</a> </li>
-                     <li>  <a  href="./productos.html">Productos</a> </li>
-                     <li>  <a  href="./contactos.html">Contactos</a> </li>
-                     <li>  <a  href="./como_comprar.html"> Como Comprar</a> </li>
-                     <li>  <a  href="#"> Preguntas Frecuentes</a> </li>
-                 </ul>
-             </nav>
-         </section>
-     </header>
-
+       <!--Video que esta puesto en todo el Body-->
+          <div class="divVideo">
+            <video autoplay muted loop class="video">
+              <source src="../src/BebÃ© - 115458.mp4" type="video/mp4">
+             
+            </video>
+          </div>
         <main>
                  
             <div> 
@@ -81,97 +110,61 @@
 
         </main>
 
-        <footer class="pieDePagina">
+       <!--Comienza el footeer-->
+       <footer class="container-fluid ">
             
-            <!--Primera sesion del footer-->
-         <section class="pieDePagina__redesSociales">
-             <!-- subtitulo que indica la opcion de seguirnos-->
-             <h3>SEGUINOS</h3>
-            <!-- div que indica los hipervinculos de las redes sociales-->
-             <div class="pieDePagina__redesSociales__iconos">
+        <section class=" footer row  mt-4">
+        <!-- titulo que nos indica la Navegacion-->
+            <div class="pieDePagina__navegacion__links mt-4 col-12 col-md-4 col-lg-4 text-left">
 
-                 <img class="facebook" src="../src/icono de facebook.png" alt="">
-                 <img class="instagram" src="../src/icono de instagram.jfif" alt="">
-                 <img class="whatsapp" src="../src/icono de whatsapp.jfif" alt="">
-      
+                <h4>Navegacion</h4>
+
+                <nav class="pieDePagina__navegacion__links__anclas">
+                    <nav class="nav flex-column text-dark">
+                        <a class="nav-link active text-dark  hvr-forward " aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link active text-dark  hvr-forward" aria-current="page" href="../paginas/productos.html">Productos</a>
+                        <a class="nav-link active text-dark  hvr-forward" aria-current="page" href="../paginas/contactos.html">Contacto</a>
+                        <a class="nav-link active text-dark  hvr-forward" aria-current="page" href="../paginas/como_comprar.html">Como Comprar</a>
+                        <a class="nav-link active text-dark  hvr-forward" aria-current="page" href="#">Preguntas Frecuentes</a>
+                      </nav>
+            </div>
+         
+            <div class=" medios__pagos mt-4 col-12 col-md-4 col-lg-4 text-center  ">
+          <!-- Titulo e imagen que nos indican cuales son las tarjetas que recibimos-->
+                <h4>Medios de pago</h4>
+                <img src="../src/visa@2x.png" class="hvr-float" height="50" alt=" imagen de la tarjeta visa">
+                <img src="../src/nativa@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta nativa">
+                <img src="../src/mastercard@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta mastercard">
+                <img src="../src/mercadopago@2x.png" class="hvr-float" height="50" alt="imagen de mercado pago">
+                <img src="../src/tarjeta-naranja@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta naranja">
+                <img src="../src/pagofacil@2x.png" class="hvr-float" height="50" alt="imagen de pago facil">
+            </div>
+  
+            <div class="pieDePagina__navegacion__contactanos mt-4 col-12 col-md-4 col-lg-4 text-center">
+         <!--titulo de los medios de contacto-->
+                <h4>Contactanos</h4>
+                <p >3525629084</p>
+                <p>giusebebes@gmail.com</p>
+                <p>Transito caseres de Allende 462</p>
+                </div> 
+      </section>
+        <section class="pieDePagina__redesSociales ">
+            <!-- div que indica los hipervinculos de las redes sociales-->
+             <div class="pieDePagina__redesSociales__instagram ">
+
+                 <a href="https://www.instagram.com/giusebebes?r=nametag"><img class="whatsapp" src="../src/logo de instagram.webp"alt=""></a>
+                
+                </div>
+                <div class="pieDePagina__redesSociales__whatsapp">
+                    <a href="https://wa.me/qr/424ODNCL2UVXD1"><img class="whatsapp" src="../src/icono de whatsapp.png" alt=""></a>
              </div>
         </section>
-              <!--Segunda sesion del footer-->
-        <section class="pieDePagina__informacion">
-                <!-- seccion de informacion de entrega-->
-             <div class="pieDePagina__informacion__entrega">
-
-                 <img src="../src/icono de camion.png" alt="">
-                 <h5>EMVIAMOS TU COMPRA</h5>
-                 <p>Entrega a todo el pais</p>
- 
-             </div>
-                  <!--seccion de informacion de pago-->
-             <div class= pieDePagina__informacion__pagos>
-                  
-                 <img src="../src/icono de tarjeta.png" alt="">
-                 <h5>PAGA COMO QUIERAS</h5>
-                 <p>Tarjeta de credito o debito.</p>
-             </div>
-                   <!-- seccion de informacion de compra segura-->
-             <div class="pieDePagina__informacion__seguridad">
-                    
-                 <img src="../src/icono de candado.png" alt="">
-                 <h5>COMPRA CON SEGURIDAD</h5>
-                 <p>Tus datos siempre protegidos</p>
-             </div>
-         </section>
-            <!--Tercera sesion del footer-->
-         <section class="pieDePagina__navegacion">
-         <!-- titulo que nos indica la Navegacion-->
-             <div class="pieDePagina__navegacion__links">
-
-                 <h4>Navegacion</h4>
-
-                 <nav class="pieDePagina__navegacion__links__anclas">
-                     <ul>
-             <!-- Seccion de navegacion, donde incluyen los hiperviculos para navegar entre las paginas-->
-                         <li> <a href="../index.html">Inicio</a> </li>
-                         <li><a href="./productos.html">Productos</a> </li>
-                         <li><a href="./contactos.html">Contactos</a> </li>
-                         <li><a href="./como_comprar.html"> Como Comprar</a> </li>
-                         <li><a href="#"> Preguntas Frecuentes</a> </li>
-                         
-    
-                     </ul>
-                 </nav>
-             </div>
-
-             <div class="pieDePagina__navegacion__medios">
-           <!-- Titulo e imagen que nos indican cuales son las tarjetas que recibimos-->
-                 <h4>Medios de pago</h4>
-                 <img src="../src/tarjeta de creditos.png" alt="">
-             </div>
-     
-             <div class="pieDePagina__navegacion__contactanos">
-          <!--titulo de los medios de contacto-->
-                 <h4>Contactanos</h4>
-
-             <div class="pieDePagina__navegacion__contactanos__telefono">
-                 <!--Numero de telefono de contacto-->
-                 <img src="../src/icono de telefono.png" alt="">
-                 <p >3525629084</p>
-             </div>
-
-             <div class="pieDePagina__navegacion__contactanos__mail">
-                 <!--Direccion de mail de contacto-->
-                 <img src="../src/icono de mail.png" alt="">
-                 <p>giusebebes@gmail.com</p>
-             </div>
-
-             <div class="pieDePagina__navegacion__contactanos__mapa">
-                 <!--Direccion de nuestro local fisico-->
-                 <img  src="../src/icono de mapa.png" s alt="">
-                 <p>Transito caseres de Allende 462</p>
-             </div>
-         </section> 
-
-     </footer>
+        <div class=" row derechos  text-center">
+          <p>DERECHOS RESERVADOS </p>
+      </div>
+    </footer>
+        
+<script  src="../js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>

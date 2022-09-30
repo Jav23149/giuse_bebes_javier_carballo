@@ -1,56 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Copse:400');
+@import url('https://fonts.googleapis.com/css?family=Domine:400');
+@import url('https://fonts.googleapis.com/css?family=Noto+Kufi+Arabic:400');
 
-*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Staatliches';
-     }
-
-   
-    
-      
-      
-         .pagina__inicio{
-       
-                        z-index: 10;
-                        
-        } 
-                       
-
-            .pagina__inicio__primera{
-                                  
-                                    height: 8rem;}
-                                  
-                               
-
-  
-               .inicio__primera__logo img {
-                                             height: 18vh;
-                                            }
-
-               
-
-                .inicio__primera__cuenta a {                                        
-                                          
-                                            font-size: 2vh;
-                                            color:#000000;
-                                           }
-
-
-              
-                         
- 
-.pagina__inicio__segunda__navegacion{
-   
-  background-color: skyblue;
-    
-   
-    
+*{ 
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
 }
+
+/* Estilos propios de Header */
+
+.crear__cuenta  a {
+  font-size: 2vh;
+  font-family: 'Noto Kufi Arabic';
+  color: rgb(0, 0, 0);
+}
+
+.logo_img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease; 
+  -ms-transition:all .9s ease; 
+  
+  }
+  .logo_img :hover img {
+  -webkit-transform:scale(1.25);
+  -moz-transform:scale(1.25);
+  -ms-transform:scale(1.25);
+  -o-transform:scale(1.25);
+  transform:scale(1.25);
+  }
+  .navbar{
+    background-color: skyblue;
+    
+  }
+  .navbar a{
+    font-family:'Noto Kufi Arabic';
+    font-size: 3vh;
+    color: black;
+  }
+
+/* Estilos propios del Main Principal*/
+
+
+.video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  filter:brightness(80%);
+  }
+
+.carousel {
+  margin-bottom: 4rem;  
+  
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+
+}
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width:100%;
+  height: 32rem;
+ 
+}
+.cover{
+  object-fit: cover;
+}
+
+.main__link__imagenes img {
+  height: 300px;
+  width: 200px;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;}
+
 .thumbnail { 
-  position: relative; 
- } 
+  position: relative;
+}
+ 
+ 
  .caption { 
   position: absolute; 
   top: 45%; 
@@ -58,71 +98,145 @@
   width: 100%; 
  } 
  .caption p {
-               color:  #111E1E;
-                                                text-decoration: none;
-                                                font-size: 6vh;
-                                                font-family: 'Staatliches';
+color:  #111E1E;
+text-decoration: none;
+font-size: 6vh;
+font-family: 'Staatliches';
 
  }
-
-          
-
-              
-            .pagina__inicio__segunda__navegacion a{
-                height: 8vh;
-               color: #000000;  }           
-               
-                                            
-
-
-
-          
-                                              
-
-                .main__link__imagenes img {
-                                                height: 300px;
-                                                width: 200px;
-                                                border-radius: 20px;
-                                                box-shadow: 5px 8px 12px black;}
-                                                
-                  
-.main__titulo {
-    text-align: center;
-    font-family: 'Staatliches';
-    font-size: 8vh;
-    background-color: skyblue;
-
+ .main__titulo{
+  background-color: skyblue;
+  
+ } 
+ .main__titulo h3{
+  font-family: 'Noto Kufi Arabic';
+  color: black;
 }
-
 .main__videos video{
-    height: 300px;
-    width: 200px;
+  height: 300px;
+  width: 200px;
 }
-     
-.pieDePagina__navegacion{
-                                        
-                                        background-color: skyblue;
-                                         }
 
-
-                .pieDePagina__navegacion__medios img {
-                    height: 5vh;
-                    margin-top: 4vh;
-                    
-                                                  }
-                                                  .pieDePagina__navegacion__contactanos{
-                                                    text-align: center;
-                                                    font-family: 'Staatliches';
-                                                  }
-                                                  .pieDePagina__redesSociales {
+/* Estilos propios de Footer*/
+.footer{
+  background-color: skyblue;
+  height: auto;
+}
+                                          
+.pieDePagina__navegacion__medios img {
+  height: 5vh;
+  margin-top: 4vh;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;
+}
+.pieDePagina__navegacion h4{
+  text-align: center;
+  font-family:'Noto Kufi Arabic';
+}
+.pieDePagina__navegacion__contactanos p{
+  font-family:'Noto Kufi Arabic'
+}
+.pieDePagina__redesSociales {
                                                     
-                                            position: fixed;
-                                             bottom: 0%;
-                                            right: 0%;
-                                                  }
-                                                  .pieDePagina__redesSociales img{
-                                                    height: 10vh;
-                                                    border-radius: 20px;
-                                                    box-shadow: 5px 8px 12px black;
-                                                  }
-                                                  
+  position: fixed;
+   bottom: 0%;
+  right: 0%;
+ }                                                
+ .pieDePagina__redesSociales img{
+  height: 10vh;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;
+}                                                 
+.derechos{
+  height: 5vh;
+  background-color: rgb(4, 68, 93); 
+  font-family:'Noto Kufi Arabic';
+  color: black;
+}
+
+/* Transiciones*/
+
+ .hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+/* Responsive CSS */
+
+@media screen and (max-width: 576px){
+  .crear__cuenta {
+    font-size: 0,5vh;}
+    .divVideo{
+   
+      position: fixed;
+      min-width: 280;
+      min-height: 653;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: -1;
+      filter:brightness(50%);
+    
+    }
+  }
+  }
+@media screen and (max-width: 576px){
+  .pieDePagina__navegacion__links{
+    padding-bottom:  4vh;
+    border-bottom:solid 1px #111E1E;}
+  }
+  @media screen and (max-width: 576px){
+    .medios__pagos {
+      padding-bottom:  4vh;
+      border-bottom: solid 1px #111E1E;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+  .pieDePagina__navegacion__links {
+    text-align: center;
+  }
+}
+
+
+/* Estilos propios de Main de la pagina Como comprar*/
+.main_comprar {
+  font-family:'Noto Kufi Arabic';
+  font-size: 3vh;
+  color: black;
+}
+@media screen and (max-width: 576px) {
+  .main_comprar {
+    font-size: 2vh;
+    
+  }
+}
