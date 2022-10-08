@@ -97,7 +97,7 @@ box-sizing: border-box;
   left: 0; 
   width: 100%; 
  } 
- .caption p {
+ .caption a {
 color:  #111E1E;
 text-decoration: none;
 font-size: 6vh;
@@ -119,6 +119,8 @@ font-family: 'Staatliches';
 
 /* Estilos propios de Footer*/
 .footer{
+  font-family:'Noto Kufi Arabic';
+  color: black;
   background-color: skyblue;
   height: auto;
 }
@@ -208,7 +210,7 @@ font-family: 'Staatliches';
     
     }
   }
-  }
+  
 @media screen and (max-width: 576px){
   .pieDePagina__navegacion__links{
     padding-bottom:  4vh;
@@ -234,9 +236,68 @@ font-family: 'Staatliches';
   font-size: 3vh;
   color: black;
 }
+
 @media screen and (max-width: 576px) {
   .main_comprar {
     font-size: 2vh;
     
   }
 }
+.main_contactos{
+  font-family:'Noto Kufi Arabic';
+  font-size: 3vh;
+  color: black;
+}
+.formularios input{
+  width:90vh;
+  height: 6vh;
+}
+.formularios textarea{
+  width:90vh;
+}
+.botones{
+  width: 50px;
+}
+@media screen and (max-width: 576px) {
+  .formularios input{
+    width:50vh;
+    height: 6vh;
+  }
+  .formularios textarea{
+    width:50vh;
+  }
+  .botones{
+    width: 60px;
+  }
+}
+.main_preguntas{
+  font-family:'Noto Kufi Arabic';
+  font-size: 3vh;
+  color: black;
+  line-height: 6vh;
+}
+.tarjetas img {
+  width: 8vh;
+  text-align: right;
+
+}
+@media screen and (max-width: 576px) {
+  .main_preguntas {
+    font-size: 2vh;
+    line-height: 4vh;}
+  }
+  .productos-img h3{
+    color: #000000;
+    font-family:'Noto Kufi Arabic';
+    font-size: 6vh;
+
+  }
+ .productos-img a {
+  text-decoration: none;
+  color: #000000;
+  font-family:'Noto Kufi Arabic';
+  font-size: 3vh;
+ }
+ .productos-img img{
+  border:solid 2px #000000;
+ }
