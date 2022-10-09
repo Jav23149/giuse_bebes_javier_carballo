@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio</title>
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/estilos.css">
 
@@ -28,7 +27,7 @@
                 </form>
                 </div>
                  <!--Logo de la pagina web-->
-                <div class=" logo_img  col-4 "> 
+                <div class=" logo_img  col-4  hvr-float"> 
                     <a class="navbar-brand" href="./index.html">
                         <div class="imagen_logo mt-4   ">
                           <img src="./src/logo.jpeg"  alt="logo-giuse-bebes " width="90" height="90"> 
@@ -45,8 +44,8 @@
                     <img src="./src/carrito de compra.png"  alt="Icono de un carrito de compras" height="30">
                 </div>
             <!--segunda seccion del Header-->
-              </section>
-            
+             
+            <section class="second_section">
               <!--Navegador que se transforma a vista mobile-->
                 <nav class="navbar navbar-expand-md mt-4 ">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +73,7 @@
                       
                       </div>
                 </nav>
-                </div>
+              </section>
             </header>
          <!--Video que esta puesto en todo el Body-->
             <div class="divVideo">
@@ -84,19 +83,21 @@
               </video>
             </div>
 
-        <main class=" container-fluid main">
+        <main class="main container-fluid">
           
            
                  <!--Primera seccion del main que incluye un carusel de imagenes-->
-                 <div id="myCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
+                 <section class="primera_seccion  row">
+                 <div class="carousel  slide mt-4 " data-bs-ride="carousel">
+                    <div class="carousel-indicators  ">
                       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
+
                       <div class="carousel-item active"> 
-                        <img src="./src/imagen1.jfif" class="d-block w-100 cover filtro" alt="bebes_1">
+                        <img src="./src/imagen1.jfif" class=" d-block w-100 cover filtro" alt="bebes_1">
                 
                        
                       </div>
@@ -120,43 +121,46 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-                </div>
+                </section>
+                
               <!--Segunda seccion del Main imagenes con link que nos lleva a productos.-->
-            <section class="main__link__imagenes container-fluid mt-4">
-              <div class="row">
-                <div class="thumbnail  text-center col-12 col-md-6 col-lg-3 "> 
-                    <img src="./src/bebas.jpeg" alt=" imagen de una bebita" class=" img-responsive"> 
+            <section class="main__link__imagenes row container-fluid ">
+              <div class="main__link__imagenes row">
+
+                <div class="thumbnail mt-4 text-center col-12 col-md-6 col-lg-3 "> 
+                    <img src="./src/bebas.jpeg" alt=" imagen de una bebita" height= "300" width= "200"> 
                     <div class="caption hvr-float"> 
                      <a href="./paginas/productos.html#bebas">BEBAS</a>
                     </div> 
                     </div>
-                    <div class="thumbnail  text-center col-12  col-md-6 mb-4 col-lg-3"> 
-                        <img src="./src/bebes.jpeg" alt="imagen de un bebe" class="img-responsive"> 
+
+                    <div class=" thumbnail mt-4 text-center col-12  col-md-6 mb-4 col-lg-3"> 
+                        <img src="./src/bebes.jpeg" alt="imagen de un bebe" height= "300" width= "200" > 
                         <div class="caption hvr-float"> 
                           <a href="./paginas/productos.html#bebes">BEBES</a> 
                         </div> 
                         </div>
-                        <div class="thumbnail  text-center col-12  col-md-6 col-lg-3"> 
-                            <img src="./src/niñas.jpeg" alt="imagen de una niña" class="img-responsive"> 
+                        <div class=" thumbnail mt-4  text-center col-12  col-md-6 col-lg-3"> 
+                            <img src="./src/niñas.jpeg" alt="imagen de una niña" height= "300" width= "200" > 
                             <div class="caption hvr-float"> 
                               <a href="./paginas/productos.html#niñas">NIÑAS</a> 
                             </div> 
                             </div>
-                            <div class="thumbnail  text-center col-12  col-md-6 col-lg-3"> 
-                                <img src="./src/niños.jpeg" alt="imagen de un niño" class="img-responsive"> 
+                            <div class="thumbnail mt-4  text-center col-12  col-md-6 col-lg-3"> 
+                                <img src="./src/niños.jpeg" alt="imagen de un niño" height= "300" width= "200" > 
                                 <div class="caption hvr-float"> 
                                   <a href="./paginas/productos.html#niños">NIÑOS</a> 
                                 </div> 
                                 </div>
                             </div>
-            </div>
+                          </section>
 
             <div class="main__titulo mt-4 text-center ">
                <h3>TU PRENDA ESTA EN GIUSE BEBES</h3>
             </div>
              <!--Tercera seccion del main, se incluyen video que demuestra alguna prendas-->
             
-            <div class="main__videos container-fluid mt-4">
+            <section class="main__videos row container-fluid mt-4">
                 <div class=" main__videos  row">
                 <div class="video1 col-6 col-md-4 col-lg-2">
                     <video src="./src/video 2.mp4" autoplay muted loop></video> 
@@ -176,13 +180,13 @@
                 <div class="video6  col-6  col-md-4 col-lg-2 ">
                     <video src="./src/video7.mp4" autoplay muted loop></video> 
                 </div>
-            </div>
+              </section>
         
         </main>
              <!--Comienza el footeer-->
-        <footer class="container-fluid ">
+        <footer class=" footer container-fluid ">
             
-            <section class=" footer row  mt-4">
+            <section class=" pie row  mt-4">
             <!-- titulo que nos indica la Navegacion-->
                 <div class="pieDePagina__navegacion__links mt-4 col-12 col-md-4 col-lg-4 text-left">
 
@@ -221,6 +225,7 @@
           </section>
             <section class="pieDePagina__redesSociales ">
                 <!-- div que indica los hipervinculos de las redes sociales-->
+                
                  <div class="pieDePagina__redesSociales__instagram ">
     
                      <a href="https://www.instagram.com/giusebebes?r=nametag"><img class="whatsapp" src="./src/logo de instagram.webp"alt=""></a>
@@ -229,6 +234,7 @@
                     <div class="pieDePagina__redesSociales__whatsapp">
                         <a href="https://wa.me/qr/424ODNCL2UVXD1"><img class="whatsapp" src="./src/icono de whatsapp.png" alt=""></a>
                  </div>
+                
             </section>
             <div class=" row derechos  text-center">
               <p>DERECHOS RESERVADOS </p>
