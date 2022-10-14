@@ -1,0 +1,22 @@
+.body{
+    .main_productos{
+      .lista_productos{
+        .productos-img h3{
+          color:$color-tipografia-principal;
+          font-family:$tipografia-general;
+          font-size:map-get( $medidas ,medida-quinta );
+      
+        }
+       .productos-img a {
+        text-decoration: none;
+        color:$color-tipografia-principal;
+        font-family:$tipografia-general;
+        font-size: map-get( $medidas ,medida-secundario);
+       }
+       .productos-img img{
+        border:solid 2px $color-tipografia-principal;
+       }
+      }
+      }
+    }
+    
