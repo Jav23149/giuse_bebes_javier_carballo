@@ -13,38 +13,36 @@
 
     </head>
 
-    <body class=" body conteiner-fluid">
+    <body class=" body">
  
-        <header class=" header container-fluid sticky-top  " > 
+        <header class=" header container sticky-top  " > 
               <!--Primera seccion de Header-->
             <section class=" first__seccion container text-center  ">
                
                 <div class="row  justify-content-center align-items-center  ">
 
                   
-                 <div class=" col-4 opacity-75 mt-4 " >
-                   <!--Buscador rapido-->
-                   <form>
-                    <input type="text"  placeholder="Buscar" class="w-100">
-                </form>
-                </div>
+                  <div class=" col-4 opacity-75 mt-4 " >
+                    <!--Buscador rapido-->
+                    <form>
+                     <input type="text"  placeholder="Buscar" class="w-100">
+                 </form>
+                 </div>
                  <!--Logo de la pagina web-->
                 <div class=" logo_img  col-4  hvr-float"> 
                     <a class="navbar-brand" href="./index.html">
                         <div class="imagen_logo mt-4   ">
-                          <img src="./src/logo.jpeg"  alt="logo-giuse-bebes " width="90" height="90"> 
-                          
+                          <img src="./src/logo.jpeg"  alt="logo-giuse-bebes " width="90" height="90">  
                         </div>
                     </a>
                   </div>
-
-                <div class= " crear__cuenta col-4 mt-4 " >
-
+                  <div class= "crear__cuenta col-4 mt-4  text-end  " >
                     <!-- link de ingreso para crear una cuenta o iniciar seción-->
-                    <a class="text-decoration-none  hvr-float" href="">CREAR CUENTA -</a>
-                    <a class="text-decoration-none   hvr-float" href=""> INICIAR SESIÓN</a>
-                    <img src="./src/carrito de compra.png"  alt="Icono de un carrito de compras" height="30">
+                    <img  class="hvr-float" src="./src/iniciar sesion.png" alt="" height="40">
+                    <a href="./paginas/carrito.html"><img class="hvr-float" src="./src/carrito de compra.png"  alt="Icono de un carrito de compras" height="40"></a>
                 </div>
+                 
+                
             <!--segunda seccion del Header-->
              
             <section class="second_section">
@@ -162,24 +160,24 @@
             </div>
              <!--Tercera seccion del main, se incluyen video que demuestra alguna prendas-->
             
-            <section class="main__videos row container-fluid mt-4">
+            <section class="main__videos row mt-4">
                 <div class=" main__videos  row">
-                <div class="video1 col-6 col-md-4 col-lg-2">
+                <div class="video1 col-6  col-md-4 col-lg-2">
                     <video src="./src/video 2.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video2  col-6 col-md-4 col-lg-2  ">
+                <div class="video2  col-6  col-md-4 col-lg-2  ">
                     <video src="./src/video3.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video3  col-6 col-md-4 col-lg-2 ">
+                <div class="video3  col-6  col-md-4 col-lg-2 ">
                     <video src="./src/video 4.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video4  col-6 col-md-4 col-lg-2 ">
+                <div class="video4  col-6  col-md-4 col-lg-2 ">
                     <video src="./src/video5.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video5  col-6 col-md-4 col-lg-2 ">
+                <div class="video5  col-6  col-md-4 col-lg-2 ">
                     <video src="./src/video6.mp4" autoplay muted loop></video> 
                 </div>
-                <div class="video6  col-6  col-md-4 col-lg-2 ">
+                <div class="video6  col-6   col-md-4 col-lg-2 ">
                     <video src="./src/video7.mp4" autoplay muted loop></video> 
                 </div>
               </section>
@@ -207,19 +205,21 @@
                 <div class=" medios__pagos mt-4 col-12 col-md-4 col-lg-4 text-center  ">
               <!-- Titulo e imagen que nos indican cuales son las tarjetas que recibimos-->
                     <h4>Medios de pago</h4>
-                    <img src="./src/visa@2x.png" class="hvr-float" height="50" alt=" imagen de la tarjeta visa">
-                    <img src="./src/nativa@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta nativa">
-                    <img src="./src/mastercard@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta mastercard">
-                    <img src="./src/mercadopago@2x.png" class="hvr-float" height="50" alt="imagen de mercado pago">
-                    <img src="./src/tarjeta-naranja@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta naranja">
                     <div class="mt-4">
+                    <img src="./src/visa@2x.png" class="hvr-float " height="50" alt=" imagen de la tarjeta visa">
+                    <img src="./src/nativa@2x.png" class="hvr-float " height="50" alt="imagen de la tarjeta nativa">
+                    <img src="./src/mastercard@2x.png" class="hvr-float " height="50" alt="imagen de la tarjeta mastercard">
+                    </div>
+                    <div class="mt-4">
+                    <img src="./src/mercadopago@2x.png" class="hvr-float " height="50" alt="imagen de mercado pago">
+                    <img src="./src/tarjeta-naranja@2x.png" class="hvr-float" height="50" alt="imagen de la tarjeta naranja">
                     <img src="./src/pagofacil@2x.png" class="hvr-float" height="50" alt="imagen de pago facil">
                   </div>
                 </div>
       
                 <div class="pieDePagina__navegacion__contactanos mt-4 col-12 col-md-4 col-lg-4 text-center">
              <!--titulo de los medios de contacto-->
-                    <h4>Contactanos</h4>
+                    <h4 class="mb-4">Contactanos</h4>
                     <p >3525629084</p>
                     <p>giusebebes@gmail.com</p>
                     <p>Transito caseres de Allende 462</p>
@@ -229,7 +229,7 @@
                 <!-- div que indica los hipervinculos de las redes sociales-->
                 
                 
-                <div class="pieDePagina__redesSociales row text-end pe-4 ">
+                <div class= "pieDePagina__redesSociales  row text-end pe-4 ">
 
                      <a href="https://www.instagram.com/giusebebes?r=nametag"><img class="whatsapp" src="./src/logo de instagram.webp"alt=""></a>
                     
