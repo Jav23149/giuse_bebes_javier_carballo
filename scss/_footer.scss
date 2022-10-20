@@ -44,7 +44,7 @@
       .footer{
         .pieDePagina__redesSociales{
            .pieDePagina__redesSociales img{
-            height: map-get( $medidas ,medida-novena);
+            height: map-get( $medidas ,medida-cuarta);
             border-radius: 20px;
             box-shadow: 5px 8px 12px $color-tipografia-principal;
           }

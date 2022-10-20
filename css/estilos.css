@@ -115,7 +115,7 @@
 
 @media screen and (max-width: 576px) {
   .footer .pieDePagina__redesSociales .pieDePagina__redesSociales img {
-    height: 8vh;
+    height: 5vh;
     border-radius: 20px;
     box-shadow: 5px 8px 12px black; } }
 
@@ -128,16 +128,32 @@
     padding-bottom: 4vh;
     border-bottom: solid 1px black; } }
 
-.body .main_productos .lista_productos .productos-img h3 {
+.body .main_productos .productos-img h3 {
   color: black;
   font-family: "Noto Kufi Arabic";
   font-size: 6vh; }
 
-.body .main_productos .lista_productos .productos-img p {
+.productos-img p {
   text-decoration: none;
   color: black;
   font-family: "Noto Kufi Arabic";
   font-size: 3vh; }
+
+.productos-img img {
+  height: 150px;
+  width: 150px; }
+
+@media screen and (max-width: 576px) {
+  .productos-img img {
+    height: 100px;
+    width: 100px; }
+  .productos-img p {
+    text-decoration: none;
+    color: black;
+    font-family: "Noto Kufi Arabic";
+    font-size: 1.2h; }
+  .productos-img a {
+    width: 8vh; } }
 
 .body .main_contactos {
   font-family: "Noto Kufi Arabic";
